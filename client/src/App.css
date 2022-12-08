@@ -4,108 +4,155 @@
   --eerie-black: #191919;
   --xanadu: #667761;
   --xanadu-grey: #607466;
+  --button-animation-time: 0.3s;
 }
 
-.App {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.navbar-container {
-  display: flex;
-  justify-content: center;
-  background-color: var(--xanadu-grey);
-  color: var(--platinum);
+body {
+  min-height: 100%;
 }
 
-.navbar {
-  width: 80%;
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  padding: 0 7%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
+  background-color: var(--xanadu-grey);
+  box-shadow: 0 1px 5px rgb(9, 9, 9, .5);
+  z-index: 1000;
+  color: var(--platinum);
+  font-size: large;
+  font-weight: 600;
 }
 
 .navbar-logo {
-  width: 6vh;
-  height: 6vh;
+  width: 2em;
+  height: 2em;
   font-size: x-large;
   background-image: url('../public/logo-elegant-closets.jpg');
   background-size: cover;
 }
 
-ul {
+header nav ul {
   list-style: none;
 }
 
-.navbar-links {
-  width: auto;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  font-size: large;
-  font-weight: 600;
+
+header nav ul li {
+  position: relative;
+  float: left;
 }
 
-.navbar-links li {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 2em 0 2em;
+header nav ul li a {
+  display: block;
+  padding: 2em 2em;
+  color: var(--platinum);
 }
 
-.navbar-links li:hover {
+header nav ul li a:focus-within,
+header nav ul li a:hover {
   background-color: var(--elegant-bg-color);
-  color: var(--text-color);
+  color: white;
+  transition: background-color var(--button-animation-time), color var(--button-animation-time);
   cursor: pointer;
-  transition: background-color 0.5s;
 }
 
-.nb-nested {
+nav ul li ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: var(--xanadu-grey);
   display: none;
+  border-radius: 0 0 4px 4px;
 }
 
-.nb-nested:hover {
-  display: flex;
+header nav ul li ul li {
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+  width: 100%;
 }
 
-.App-header {
-  background-color: var(--platinum);
+header nav ul li:focus-within > ul,
+header nav ul li:focus > ul{
+  display: initial;
+}
+
+
+
+
+.home-splash {
+  width: 100%;
   height: 100vh;
+  background-color: var(--);
+  background-image: url('');
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: var(--xanadu-grey);
+  align-items: center;
+  color: var(--xanadu);
 }
+
+.intro {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--xanadu-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+  color: var(--platinum);
+}
+
 
 .get-a-quote {
   position: fixed;
+  width: 120px;
+  height: 95px;
+  overflow: hidden;
   left: 100vw;
   top: 100vh;
-  translate: -170% -130%;
+  translate: -120% -130%;
   border-radius: 5px;
-  background-color: var(--bg-color);
-  padding: 1em;
+  background-color: var(--elegant-bg-color);
+  transition: background-color var(--button-animation-time), color var(--button-animation-time);
+  padding: .5em;
   animation: 1.5s infinite alternate throbing;
-  color: var(--eerie-black);
-}
-
-@keyframes throbing {
-  from {
-    box-shadow: 1px 1px 9px 10px rgb(10, 10, 10, .7);
-  }
-
-  to {
-    box-shadow: 1px 1px 9px 10px rgb(10, 10, 10, .4);
-  }
-  
+  justify-items: center;
+  text-align: center;
+  color: var(--platinum);
+  font-size: medium;
+  font-weight: 200;
 }
 
 .get-a-quote:hover {
   background-color: #3a404c;
   color: white;
   cursor: pointer;
+}
+
+
+
+footer {
+  background-color: var(--eerie-black);
+  color: var(--platinum);
+}
+
+
+
+@keyframes throbing {
+  from {
+    box-shadow: 1px 1px 9px 10px rgb(10, 10, 10, .3);
+  }
+
+  to {
+    box-shadow: 1px 1px 9px 10px rgb(10, 10, 10, .2);
+  }
+  
 }
