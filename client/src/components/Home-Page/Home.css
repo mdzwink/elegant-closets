@@ -1,0 +1,27 @@
+section {
+  width: 100%;
+}
+
+.what-we-do {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--platinum);
+}
+
+.what-we-do-txt {
+  max-width: 70ch;
+  padding: 5em;
+  font-size: larger;
+  font-weight: bold;
+  color: var(--xanadu-grey);
+}
+
+.what-we-do-vid {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  min-width: 30%;
+}
+

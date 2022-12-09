@@ -1,27 +1,33 @@
 import React, { className } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
+
+
   return (
     <header>
-        <h1 className='navbar-logo'></h1>
+        <div className='navbar-logo'></div>
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Spaces ></a>
+      <ul>
+          <li><Link to={'/'} className='link'>Home</Link></li>
+          <li><Link to={'/about'} className='link'>About Us</Link></li>
+          <li><Link to={'/spaces'} className='link'>Spaces +</Link>
             <ul>
-              <li><a href="#">Closets</a></li>
-              <li><a href="#">Offices</a></li>
+              <li><Link to={'/spaces/closet'} className='link link-closet'><div className='wb'>closet</div></Link></li>
+              <li><Link to={'/spaces/office'} className='link link-office'><div>office</div></Link></li>
+              <li><Link to={'/spaces/garage'} className='link link-garage'><div>garage</div></Link></li>
+              <li><Link to={'/spaces/pantrie'} className='link link-pantrie'><div>pantrie</div></Link></li>
+              <li><Link to={'/spaces/garage-floor'} className='link link-garage-floor'><div>garage floor</div></Link></li>
             </ul>
           </li>
-          <li><a href="#">Process</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact Us ></a>
+          <li><Link to={'process'} className='link'>Process</Link></li>
+          <li><Link to={'blog'} className='link'>Blog</Link></li>
+          <li><Link to={'contact'} className='link'>Contact Us +</Link>
             <ul>
-              <li><a href="#">Call us at ###</a></li>
-              <li><a href="#">Request a free consoltation</a></li>
-              <li><a href="#">Request a call back</a></li>
+              <li><Link to={'call'} className='link'>Call us at ###</Link></li>
+              <li><Link to={'request/consolt'} className='link'>Request a free consoltation</Link></li>
+              <li><Link to={'request/call-back'} className='link'>Request a call back</Link></li>
             </ul>
           </li>
         </ul>

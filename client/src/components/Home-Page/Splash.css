@@ -1,0 +1,45 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.home-splash {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--xanadu);
+}
+
+.carousel {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+}
+
+.carousel img {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  background-color: var(--eerie-black);
+}
+
+
+
+.carousel-button {
+  position: relative;
+  transform: scale(140%);
+  padding: 0 2em;
+  background: none;
+  border: none;
+  opacity: 0.5;
+  font-size: xx-large;
+  font-weight: 600;
+  z-index: 3;
+}
+
+.carousel-button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}

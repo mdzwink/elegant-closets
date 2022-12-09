@@ -1,5 +1,5 @@
 :root {
-  --elegant-bg-color: #8A5631;
+  --elegant-brown: #8A5631;
   --platinum: #E1E1DB;
   --eerie-black: #191919;
   --xanadu: #667761;
@@ -15,7 +15,8 @@
 }
 
 body {
-  min-height: 100%;
+  min-height: 100vh;
+  margin: 0;
 }
 
 header {
@@ -43,6 +44,8 @@ header {
 
 header nav ul {
   list-style: none;
+  height: 100%;
+  text-transform: capitalize;
 }
 
 
@@ -55,48 +58,65 @@ header nav ul li a {
   display: block;
   padding: 2em 2em;
   color: var(--platinum);
+  text-align: center;
 }
 
-header nav ul li a:focus-within,
-header nav ul li a:hover {
-  background-color: var(--elegant-bg-color);
-  color: white;
+header nav ul li:focus-within > ul,
+header nav ul li Link:hover {
+  background-color: var(--elegant-brown);
+  color: var(--eerie-black);
   transition: background-color var(--button-animation-time), color var(--button-animation-time);
   cursor: pointer;
+}
+
+.link div {
+  background-color: var(--platinum);
+  color: #607466;
+}
+
+.link {
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+.link:hover {
+  opacity: 0.9;
+}
+.link-closet {
+  background-image: url('../public/images/huy-nguyen-YhP-E5YwOGE-unsplash.jpg');
+}
+.link-office {
+  background-image: url('../public/images/christian-mackie-lDlU1zbjGQA-unsplash.jpg');
+}
+.link-garage {
+  background-image: url('../public/images/kevin-schmid-42MP7b-AJ-Q-unsplash.jpg');
+}
+.link-pantrie {
+  background-image: url('../public/images/annie-spratt-EjDNFhbsAJc-unsplash.jpg');
+}
+.link-garage-floor {
+  background-image: url('../public/garage-test-img.webp');
 }
 
 nav ul li ul {
   position: absolute;
   left: 0;
   width: 100%;
-  background-color: var(--xanadu-grey);
   display: none;
   border-radius: 0 0 4px 4px;
 }
 
 header nav ul li ul li {
+  background-color: var(--xanadu-grey);
   border-top: 1px solid rgb(0, 0, 0, 0.1);
   width: 100%;
 }
 
-header nav ul li:focus-within > ul,
-header nav ul li:focus > ul{
+header nav ul li:hover > ul{
   display: initial;
 }
 
 
-
-
-.home-splash {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--);
-  background-image: url('');
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--xanadu);
-}
 
 .intro {
   width: 100%;
@@ -120,7 +140,7 @@ header nav ul li:focus > ul{
   top: 100vh;
   translate: -120% -130%;
   border-radius: 5px;
-  background-color: var(--elegant-bg-color);
+  background-color: var(--elegant-brown);
   transition: background-color var(--button-animation-time), color var(--button-animation-time);
   padding: .5em;
   animation: 1.5s infinite alternate throbing;
@@ -129,6 +149,7 @@ header nav ul li:focus > ul{
   color: var(--platinum);
   font-size: medium;
   font-weight: 200;
+  z-index: 999;
 }
 
 .get-a-quote:hover {
@@ -142,6 +163,18 @@ header nav ul li:focus > ul{
 footer {
   background-color: var(--eerie-black);
   color: var(--platinum);
+}
+
+.placeholder {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--platinum);
+  font-size: larger;
+  font-weight: bolder;
+  color: var(--xanadu);
 }
 
 

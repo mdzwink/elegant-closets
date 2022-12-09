@@ -1,10 +1,14 @@
+import './Splash.css';
+import classNames from "classnames";
 
-const HomeSplash = () => {
+const Splash = () => {
   return (
-      <div className="home-splash">
-        <h1>img carousel placeholder</h1>
+      <div className="carousel">
+        <button className="carousel-button left">&#10508;</button>
+        <img src="../../../public/images/annie-spratt-EjDNFhbsAJc-unsplash.jpg" alt="brightly lit office with black walls and light birch desk"/>
+        <button className="carousel-button right">&#10509;</button>
       </div>
   )
 }
 
-export default HomeSplash;
+export default Splash;
