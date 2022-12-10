@@ -5,10 +5,6 @@
 .home-splash {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--xanadu);
 }
 
 .carousel {
@@ -22,13 +18,16 @@
   padding: 0;
   margin: 0;
   list-style: none;
-
 }
 
 .slide {
   position: absolute;
   inset: 0;
   opacity: 0;
+}
+
+.active {
+  opacity: 1;
 }
 
 .slide > img {
@@ -39,12 +38,6 @@
   object-position: center;
 }
 
-.slide[data-active] {
-  opacity: 1;
-}
-
-
-
 .carousel-button {
   position: absolute;
   top: 50%;
@@ -52,7 +45,7 @@
   z-index: 2;
   border: none;
   border-radius: .25rem;
-  background: rgb(0, 0, 0, .2);
+  background: rgb(0, 0, 0, .4);
   color: var(--platinum);
   padding: 0 .5rem;
   opacity: .4;
@@ -62,7 +55,7 @@
 
 .carousel-button:hover,
 .carousel-button:active {
-  background: rgb(0, 0, 0, .3);
+  background: rgb(0, 0, 0, .5);
   opacity: .9;
   cursor: pointer;
 }

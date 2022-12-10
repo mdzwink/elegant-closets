@@ -54,7 +54,7 @@ header nav ul li {
   float: left;
 }
 
-header nav ul li a {
+header nav ul li a{
   display: block;
   padding: 2em 2em;
   color: var(--platinum);
@@ -62,7 +62,7 @@ header nav ul li a {
 }
 
 header nav ul li:focus-within > ul,
-header nav ul li Link:hover {
+header nav ul li:hover {
   background-color: var(--elegant-brown);
   color: var(--eerie-black);
   transition: background-color var(--button-animation-time), color var(--button-animation-time);
