@@ -11,7 +11,7 @@ const Closet = () => {
   return (
     <>
       <h1 className='placeholder'>Closet Page</h1>
-      <Carousel imgArr={walkInClosetImgs} />
+      <Carousel secondary={true} height={50} imgArr={walkInClosetImgs} />
     </>
   )
 }

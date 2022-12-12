@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import './Home.css';
-import Splash from "./Splash"
 import Intro from "./Intro"
 import Carousel from './Carousel';
 
@@ -9,13 +8,16 @@ const Home = () => {
   const homeMainImgArr = [
     'https://source.unsplash.com/1920x1080?bamboo',
     'https://source.unsplash.com/1920x1080?charcoal',
-    'https://source.unsplash.com/1920x1080?maple'
+    'https://source.unsplash.com/1920x1080?maple',
   ]
 
   return (
     <main className='home-page'>
-      <Carousel imgArr={homeMainImgArr}/>
+      <Carousel imgArr={homeMainImgArr} hgt={80} secondary={true}/>
       <Intro />
+      <Intro />
+
+
       <section className="easy-upgrade">
         
       </section>

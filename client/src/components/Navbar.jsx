@@ -1,13 +1,15 @@
-import React, { className } from 'react';
+import React, { className, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
-
+  const scrollToTop = () => {
+      window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }
 
   return (
     <header>
-        <div className='navbar-logo'></div>
+        <Link to={'/'}><div className='navbar-logo' onClick={() => scrollToTop()}></div></Link>
       <nav>
       <ul>
           <li><Link to={'/'} className='link'>Home</Link></li>

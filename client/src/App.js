@@ -2,8 +2,6 @@ import { Outlet } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar'
 import GetAQuote from './components/GetAQuote';
-import Splash from './components/Home-Page/Splash';
-import Intro from './components/Home-Page/Intro';
 
 function App() {
   return (

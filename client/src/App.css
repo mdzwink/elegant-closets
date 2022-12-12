@@ -30,8 +30,15 @@ header {
   box-shadow: 0 1px 5px rgb(9, 9, 9, .5);
   z-index: 1000;
   color: var(--platinum);
-  font-size: large;
+  font-size: 2vh;
   font-weight: 600;
+}
+
+@supports (position: sticky){
+  header {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .navbar-logo {
@@ -40,6 +47,10 @@ header {
   font-size: x-large;
   background-image: url('../public/logo-elegant-closets.jpg');
   background-size: cover;
+}
+
+.navbar-logo:hover {
+  cursor: pointer;
 }
 
 header nav ul {
