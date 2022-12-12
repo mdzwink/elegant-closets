@@ -1,4 +1,4 @@
-import Carousel from "../Home-Page/Carousel";
+import Carousel from "../Carousel";
 
 const Closet = () => {
 

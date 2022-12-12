@@ -1,3 +1,6 @@
+import BeforeAfter from "./BeforAfter";
+
+
 
 const Intro = () => {
 
@@ -14,7 +17,7 @@ const Intro = () => {
             All our products are made from premium-quality, thermally-fused laminate panels, giving them a polished wooden finishing and excellent durability. That's why we back all our products with a LIFETIME WARRANTY. We believe that you deserve the best and our Price-Match Guarantee ensures that you get the best. We will match all of our competitors' prices so you can experience our Elegant Closets. Call us today to book your free consultation and get a quote.
           </article>
         </div>
-        <div className="what-we-do-vid">vid placeholder</div>
+        <BeforeAfter />
       </section>
   )
 }

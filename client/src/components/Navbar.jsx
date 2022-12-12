@@ -1,6 +1,8 @@
 import React, { className, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import './Navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faPinterest, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Navbar = () => {
   const scrollToTop = () => {
@@ -25,7 +27,7 @@ const Navbar = () => {
           </li>
           <li><Link to={'process'} className='link'>Process</Link></li>
           <li><Link to={'blog'} className='link'>Blog</Link></li>
-          <li><Link to={'contact'} className='link'>Contact Us +</Link>
+          <li><Link to={'contact'} className='link'>Contact Us + <FontAwesomeIcon icon={faFacebook} /><FontAwesomeIcon icon={faPinterest} /><FontAwesomeIcon icon={faInstagram} /></Link>
             <ul>
               <li><Link to={'call'} className='link'>Call us at ###</Link></li>
               <li><Link to={'request/consolt'} className='link'>Request a free consoltation</Link></li>

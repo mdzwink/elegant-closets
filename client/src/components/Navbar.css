@@ -1,0 +1,107 @@
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--xanadu-grey);
+  box-shadow: 0 1px 5px rgb(9, 9, 9, .5);
+  z-index: 1000;
+  color: white;
+  font-size: 2vh;
+  font-weight: 600;
+}
+
+@supports (position: sticky){
+  header {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.navbar-logo {
+  width: 2em;
+  height: 2em;
+  font-size: x-large;
+  background-image: url('../../public/logo-elegant-closets.jpg');
+  background-size: cover;
+}
+
+.navbar-logo:hover {
+  cursor: pointer;
+}
+
+header nav ul {
+  list-style: none;
+  height: 100%;
+  text-transform: capitalize;
+}
+
+
+header nav ul li {
+  position: relative;
+  float: left;
+}
+
+header nav ul li a{
+  display: block;
+  padding: 2em 2em;
+  color: var(--platinum);
+  text-align: center;
+}
+
+header nav ul li:focus-within > ul,
+header nav ul li:hover {
+  background-color: var(--elegant-brown);
+  color: var(--eerie-black);
+  transition: background-color var(--button-animation-time), color var(--button-animation-time);
+  cursor: pointer;
+}
+
+.link div {
+  background-color: var(--platinum);
+  color: #607466;
+}
+
+.link {
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+.link:hover {
+  opacity: 0.9;
+}
+.link-closet {
+  background-image: url('../../public/images/huy-nguyen-YhP-E5YwOGE-unsplash.jpg');
+}
+.link-office {
+  background-image: url('../../public/images/christian-mackie-lDlU1zbjGQA-unsplash.jpg');
+}
+.link-garage {
+  background-image: url('../../public/images/kevin-schmid-42MP7b-AJ-Q-unsplash.jpg');
+}
+.link-pantrie {
+  background-image: url('../../public/images/annie-spratt-EjDNFhbsAJc-unsplash.jpg');
+}
+.link-garage-floor {
+  background-image: url('../../public/garage-test-img.webp');
+}
+
+nav ul li ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: none;
+  border-radius: 0 0 4px 4px;
+}
+
+header nav ul li ul li {
+  background-color: var(--xanadu-grey);
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+header nav ul li:hover > ul{
+  display: initial;
+}

@@ -1,7 +1,8 @@
 import classNames from 'classnames';
 import './Home.css';
 import Intro from "./Intro"
-import Carousel from './Carousel';
+import Carousel from '../Carousel';
+import BeforeAfter from './BeforAfter';
 
 const Home = () => {
 
@@ -14,7 +15,6 @@ const Home = () => {
   return (
     <main className='home-page'>
       <Carousel imgArr={homeMainImgArr} hgt={80} secondary={true}/>
-      <Intro />
       <Intro />
 
 

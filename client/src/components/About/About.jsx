@@ -1,4 +1,4 @@
-import Carousel from "../Home-Page/Carousel";
+import Carousel from "../Carousel";
 
 const About = () => {
 
@@ -10,8 +10,10 @@ const About = () => {
 
   return (
     <>
-      <h1 className='placeholder'>About Page</h1>
-      <Carousel w={60} imgArr={aboutArr} />
+      <div className="about-us">
+        <h1 className='placeholder'>About Page</h1>
+        <Carousel w={50} h={30} imgArr={aboutArr} />
+      </div>
     </>
   )
 }

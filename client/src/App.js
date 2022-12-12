@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar'
 import GetAQuote from './components/GetAQuote';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Navbar />
       <Outlet />
       <GetAQuote />
-      <footer>&#10508; This is the footer &#10509;</footer>
+      <Footer />
     </div>
   );
 }
