@@ -31,8 +31,3 @@ section {
 iframe {
   border-radius: 10px;
 }
-
-span {
-  color: rgb(255, 255, 255, .8);
-  z-index: 1000;
-}

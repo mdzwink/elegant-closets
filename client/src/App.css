@@ -63,8 +63,10 @@ body {
   cursor: pointer;
 }
 
-
-
+.test-vid {
+  width: 100vw;
+  height: 600px;
+}
 
 .placeholder {
   width: 100%;

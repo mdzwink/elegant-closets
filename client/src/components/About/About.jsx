@@ -14,6 +14,7 @@ const About = () => {
         <h1 className='placeholder'>About Page</h1>
         <Carousel w={50} h={30} imgArr={aboutArr} />
       </div>
+        <iframe className="test-vid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dEnupIJwiR8?autoplay=1&mute=q" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen></iframe>
     </>
   )
 }

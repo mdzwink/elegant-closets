@@ -1,14 +1,13 @@
 header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  padding: 0 7%;
+  padding: 0 3% 0 7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--xanadu-grey);
   box-shadow: 0 1px 5px rgb(9, 9, 9, .5);
   z-index: 1000;
-  color: white;
   font-size: 2vh;
   font-weight: 600;
 }
@@ -47,7 +46,7 @@ header nav ul li {
 header nav ul li a{
   display: block;
   padding: 2em 2em;
-  color: var(--platinum);
+  color: white;
   text-align: center;
 }
 
@@ -61,16 +60,17 @@ header nav ul li:hover {
 
 .link div {
   background-color: var(--platinum);
-  color: #607466;
+  color: var(--xanadu-grey);
 }
 
 .link {
   background-size: cover;
   background-position: center;
-  opacity: 0.6;
+  font-weight: 600;
+  color: var(--platinum);
 }
 .link:hover {
-  opacity: 0.9;
+  color: white;
 }
 .link-closet {
   background-image: url('../../public/images/huy-nguyen-YhP-E5YwOGE-unsplash.jpg');
@@ -88,6 +88,63 @@ header nav ul li:hover {
   background-image: url('../../public/garage-test-img.webp');
 }
 
+.link-contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.link-contact > a {
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.social-nav-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: red;
+  background-color: blue;
+}
+
+.social-nav-container > a {
+  padding: .1em;
+  background: var(--xanadu-grey);
+}
+
+.social-nav-in:hover {
+  cursor: pointer;
+  color: #743bad;
+}
+.social-nav-fb:hover {
+  cursor: pointer;
+  color: #1977f3;
+}
+.social-nav-pi:hover {
+  cursor: pointer;
+  color: #b7081b;
+}
+
+.contact-popout {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 10em;
+  opacity: 0;
+  transition: opacity 300ms, top 300ms;
+  z-index: -1;
+}
+
+.contact-popout.active {
+  opacity: 1;
+  top: 100%;
+}
+
 nav ul li ul {
   position: absolute;
   left: 0;
@@ -100,6 +157,11 @@ header nav ul li ul li {
   background-color: var(--xanadu-grey);
   border-top: 1px solid rgb(0, 0, 0, 0.1);
   width: 100%;
+  opacity: .8;
+}
+
+nav ul li ul > li:hover {
+  opacity: 1;
 }
 
 header nav ul li:hover > ul{
