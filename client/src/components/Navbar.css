@@ -8,7 +8,7 @@ header {
   background-color: var(--xanadu-grey);
   box-shadow: 0 1px 5px rgb(9, 9, 9, .5);
   z-index: 1000;
-  font-size: 2vh;
+  font-size: max(2vh, 1em);
   font-weight: 600;
 }
 
@@ -111,7 +111,7 @@ header nav ul li:hover {
 }
 
 .social-nav-container > a {
-  padding: .1em;
+  padding: .1em .8em;
   background: var(--xanadu-grey);
 }
 

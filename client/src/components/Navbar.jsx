@@ -53,9 +53,9 @@ const Navbar = () => {
           </li>
           <li className="link">
             <div className="social-nav-container">
-              <a className='social-nav-fb'><FontAwesomeIcon icon={faFacebook} /></a>
-              <a className='social-nav-pi'><FontAwesomeIcon icon={faPinterest} /></a>
-              <a className='social-nav-in'><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href='https://www.facebook.com/ElegantClosets.ca/' target='_blank' className='social-nav-fb'><FontAwesomeIcon icon={faFacebook} /></a>
+              <a href='https://www.pinterest.ca/elegantcustom/' target='_blank' className='social-nav-pi'><FontAwesomeIcon icon={faPinterest} /></a>
+              <a href='https://www.instagram.com/elegantclosets.ca/' target='_blank' className='social-nav-in'><FontAwesomeIcon icon={faInstagram} /></a>
             </div>
           </li>
         </ul>

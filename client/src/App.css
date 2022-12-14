@@ -80,15 +80,23 @@ body {
   color: var(--xanadu);
 }
 
-footer {
+.footer-container {
   background-color: rgb(30, 30, 30);
   color: var(--platinum);
   position: relative;
   min-height: 10em;
+  padding: 1em;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 20em 30em 20em;
+  grid-template-rows: 4em;
+  justify-content: center;
 }
 
 /* use grid?
@@ -96,7 +104,7 @@ show copy right, certifications, links to contact, social, spaces, work for us, 
 
 
 footer > img {
-  height: 45%;
+  height: 100%;
 }
 
 
