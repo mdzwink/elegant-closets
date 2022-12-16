@@ -44,9 +44,12 @@ const Navbar = () => {
                 <input type="text" placeholder='Name'/>
                 <input type="text" placeholder='email/phone-number'/>
                 <p>'What service are you looking for?'</p>
-                <input type="checkbox" placeholder='Closet, Pantry or Office'/>
-                <input type="checkbox" placeholder='Garage Flooring'/>
-                <input type="checkbox" placeholder='Other'/>
+                <input type="checkbox" id='closet' name='closet' value={'closet'} />
+                <label htmlFor="closet">'Closet, Pantry or Office'</label>
+                <input type="checkbox" id='garage' name='garage' value={'garage'}/>
+                <label htmlFor="garage">'Garage'</label>
+                <input type="checkbox" name='other' value={'other'}/>
+                <label htmlFor="other">'Other Space'</label>
                 <button>Submit</button>
               </form>
             </div>
