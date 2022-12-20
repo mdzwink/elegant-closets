@@ -14,7 +14,6 @@ const Navbar = () => {
   const handleContactPopoutToggle = (e) => {
     e.preventDefault()
     contactPopout ? setContactPopout(false) : setContactPopout(true);
-    console.log(contactPopout)
   }
 
   return (
@@ -39,11 +38,13 @@ const Navbar = () => {
             <a className='link' onClick={(e) => handleContactPopoutToggle(e)}>
               Contact Us + 
             </a>
-            <div className={contactPopout ? "contact-popout active" : "contact-popout"}>
+            <div className={contactPopout ? "contact-popout active" : "contact-popout"} >
+              <h1>Contact us</h1>
+              <h3>Call us at <em>647-856-4646</em> <br></br> or book an appointment below</h3>
               <form action="#" className="contact-form">
                 <input type="text" placeholder='Name'/>
                 <input type="text" placeholder='email/phone-number'/>
-                <p>'What service are you looking for?'</p>
+                <p>'What space are you upgrading?'</p>
                 <input type="checkbox" id='closet' name='closet' value={'closet'} />
                 <label htmlFor="closet">'Closet, Pantry or Office'</label>
                 <input type="checkbox" id='garage' name='garage' value={'garage'}/>
@@ -63,6 +64,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
+      <div className={contactPopout ? "background-fade active" : "background-fade"} onClick={() => handleContactPopoutToggle()}></div>
     </header>
   )
 }
