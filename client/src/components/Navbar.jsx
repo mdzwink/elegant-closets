@@ -25,11 +25,11 @@ const Navbar = () => {
           <li><Link to={'/about'} className='link'>About Us</Link></li>
           <li><Link to={'/spaces'} className='link'>Spaces +</Link>
             <ul>
-              <li><Link to={'/spaces/closet'} className='link link-closet'><div className='wb'>closet</div></Link></li>
-              <li><Link to={'/spaces/office'} className='link link-office'><div>office</div></Link></li>
-              <li><Link to={'/spaces/garage'} className='link link-garage'><div>garage</div></Link></li>
-              <li><Link to={'/spaces/pantrie'} className='link link-pantrie'><div>pantrie</div></Link></li>
-              <li><Link to={'/spaces/garage-floor'} className='link link-garage-floor'><div>garage floor</div></Link></li>
+              <li className='link link-closet'><Link to={'/spaces/closet'} ><div className='wb'>closet</div></Link></li>
+              <li className='link link-office'><Link to={'/spaces/office'} ><div>office</div></Link></li>
+              <li className='link link-garage'><Link to={'/spaces/garage'} ><div>garage</div></Link></li>
+              <li className='link link-pantrie'><Link to={'/spaces/pantrie'} ><div>pantrie</div></Link></li>
+              <li className='link link-garage-floor'><Link to={'/spaces/garage-floor'} ><div>garage floor</div></Link></li>
             </ul>
           </li>
           <li><Link to={'process'} className='link'>Process</Link></li>
@@ -64,7 +64,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <div className={contactPopout ? "background-fade active" : "background-fade"} onClick={() => handleContactPopoutToggle()}></div>
+      <div className={contactPopout ? "background-fade active" : "background-fade"} onClick={(e) => handleContactPopoutToggle(e)}></div>
     </header>
   )
 }
