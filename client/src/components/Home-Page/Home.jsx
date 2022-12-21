@@ -1,9 +1,6 @@
-import classNames from 'classnames';
 import './Home.css';
 import Intro from "./Intro"
 import Carousel from '../Carousel';
-import BeforeAfter from './BeforAfter';
-
 const Home = () => {
 
   const homeMainImgArr = [
