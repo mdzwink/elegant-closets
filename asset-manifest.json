@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/elegant-closets/static/css/main.2d884a79.css",
+    "main.js": "/elegant-closets/static/js/main.fedde525.js",
+    "static/media/annie-spratt-EjDNFhbsAJc-unsplash.jpg": "/elegant-closets/static/media/annie-spratt-EjDNFhbsAJc-unsplash.d553064d2efe450e30f6.jpg",
+    "static/media/christian-mackie-lDlU1zbjGQA-unsplash.jpg": "/elegant-closets/static/media/christian-mackie-lDlU1zbjGQA-unsplash.b2d91ca38f0523e101a4.jpg",
+    "static/media/kevin-schmid-42MP7b-AJ-Q-unsplash.jpg": "/elegant-closets/static/media/kevin-schmid-42MP7b-AJ-Q-unsplash.64b626c08c68b354d582.jpg",
+    "static/media/huy-nguyen-YhP-E5YwOGE-unsplash.jpg": "/elegant-closets/static/media/huy-nguyen-YhP-E5YwOGE-unsplash.38dff481861f4bd1d0b0.jpg",
+    "static/media/garage-test-img.webp": "/elegant-closets/static/media/garage-test-img.51ad21255445146186be.webp",
+    "index.html": "/elegant-closets/index.html",
+    "main.2d884a79.css.map": "/elegant-closets/static/css/main.2d884a79.css.map",
+    "main.fedde525.js.map": "/elegant-closets/static/js/main.fedde525.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d884a79.css",
+    "static/js/main.fedde525.js"
+  ]
+}
